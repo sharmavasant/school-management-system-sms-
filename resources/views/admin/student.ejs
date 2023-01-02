@@ -1,0 +1,44 @@
+<form action="/admin/student" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    
+    
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Name of student
+        </label>
+        <input name="name"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="username" type="text" placeholder="Enter your name">
+    </div>
+    <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="cl">
+            Class
+        </label>
+        
+            <select name="cl" id="cl" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="1">Class-1</option>
+                <option value="2">Class-2</option>
+                <option value="3">Class-3</option>
+                <option value="4">Class-4</option>
+            </select>
+              
+    </div>
+    <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="section">
+            Section
+        </label>
+        
+            <select name="section" id="section" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="A">Section-A</option>
+                <option value="B">Section-B</option>
+                <option value="C">Section-C</option>
+                <option value="D">Section-D</option>
+            </select>
+        </div>
+    <div class="flex items-center justify-between">
+        <button
+            class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit">
+            Add New Student
+        </button>
+    </div>
+</form>

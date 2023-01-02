@@ -1,0 +1,55 @@
+<form action="/admin/teacher" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    
+    
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Name of teacher
+        </label>
+        <input name="name"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="username" type="text" placeholder="Enter your name">
+    </div>
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+            Subject
+        </label>
+        <input name="subject"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="subject" type="subject" placeholder="subject">
+    </div>
+    <div class="mb-6" name="cl">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="cl">
+            Class
+        </label>
+        <input type="checkbox" id="cl" name="cl" value="1">
+        <label for="cl">Class-1</label><br>
+        <input type="checkbox" id="cl" name="cl" value="2">
+        <label for="cl">Class-2</label><br>
+        <input type="checkbox" id="cl" name="cl" value="3">
+        <label for="cl">Class-3</label><br>
+        <input type="checkbox" id="cl" name="cl" value="4">
+        <label for="cl">Class-4</label><br>
+              
+    </div>
+    <div class="mb-6" name="section">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="section">
+            Section
+        </label>
+        
+        <input type="checkbox" id="section" name="section" value="A">
+        <label for="section">Section-A</label><br>
+        <input type="checkbox" id="section" name="section" value="B">
+        <label for="section">Section-B</label><br>
+        <input type="checkbox" id="section" name="section" value="C">
+        <label for="section">Section-C</label><br>
+        <input type="checkbox" id="section" name="section" value="D">
+        <label for="section">Section-D</label><br>
+        </div>
+    <div class="flex items-center justify-between">
+        <button
+            class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit">
+            Add New Teacher
+        </button>
+    </div>
+</form>

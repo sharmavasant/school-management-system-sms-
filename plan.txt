@@ -1,0 +1,14 @@
+[.] Create directory
+[.] install all required dependencies'
+[.] create express server
+[.] git setup
+[.] install laravel
+[.] install tailwind
+[.] create homepage
+[.] create controllers
+[.] create models
+        - connect to mongodb
+        - use connect-mongo for session store
+[.] create login and register page using route
+[.] build a register crud
+[.] build login using passport

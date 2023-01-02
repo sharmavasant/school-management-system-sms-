@@ -1,6 +1,6 @@
 
 # SCHOOL-MANAGEMENT-SYSTEM
-It is school management system in which the school administration can assign classes/sections to their students as well as teachers and can also add events. On the otherhand, the students and teachers can login and see the students and teachers schedule as well as events.
+It is a school management system in which the school administration can assign classes/sections to their students as well as teachers and can also add events. On the otherhand, the students and teachers can login and see the students and teachers schedule as well as events.
 
 ## Running Tests
 After download or clone run `npm install` OR `yarn install` to install all the dependancies.

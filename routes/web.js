@@ -3,6 +3,10 @@ const authController = require('../app/http/controllers/authController')
 const formController = require('../app/http/controllers/admin/formController')
 const teacherController = require('../app/http/controllers/admin/teacherController')
 const adminController = require('../app/http/controllers/admin/adminController')
+const dashController = require('../app/http/controllers/dashController')
+const eventController = require('../app/http/controllers/eventController')
+const eventsController = require('../app/http/controllers/admin/eventsController')
+const contactController = require('../app/http/controllers/contactController')
 
 
 //middlewares
@@ -26,6 +30,16 @@ function initRoutes(app){
     app.post('/logout', admin, formController().logout)
 
     app.get('/admin', adminController().index)
+    app.get('/admin/events', admin, eventsController().index)
+    app.post('/admin/events', admin, eventsController().postEvent)
+    app.post('/logout', admin, eventsController().logout)
+
+    //user's dashboard
+    app.get('/dashboard', auth, dashController().index)
+    app.get('/events', eventController().index)
+
+    //contact
+    app.get('/contact', contactController().index)
 }
 
 

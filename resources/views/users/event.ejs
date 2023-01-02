@@ -1,0 +1,30 @@
+
+<table class="w-full table-auto bg-white">
+    <p class="text-center font-bold text-lg">Event details</p>
+    <thead>
+        <tr>
+            <th class="px-4 py-2 text-left">Name of Event</th>
+            <th class="px-4 py-2 text-left">Time</th>
+            <th class="px-4 py-2 text-left">Venue</th>
+            <th class="px-4 py-2 text-left">Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% events.forEach((event) => { %>
+        <tr>
+            <td class="border px-4 py-2">
+                <%= event.name %>
+            </td>
+            <td class="border px-4 py-2">
+                <%= event.time %>
+            </td>
+            <td class="border px-4 py-2">
+                <%= event.venue %>
+            </td>
+            <td class="border px-4 py-2">
+                <%= event.date %>
+            </td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
